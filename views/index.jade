@@ -1,5 +1,48 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  head
+    title ClickClack
+    link(rel='stylesheet', href='/stylesheets/index.css')
+  body
+    h1 ClickClack
+    h2 Introduction
+    p Welcome to ClickClack !
+    p ClickClack is a website sample.
+    p ClickClack website is using ClickClack API.
+    h2 Content
+    p In ClickClack you can:
+    ul
+      li
+        | CRUD clicks (goto =>
+        a(href="/clicks") /clicks
+        | )
+      li
+        | CRUD clacks (goto =>
+        a(href="/clacks") /clacks
+        | )
+      li
+        | CRUD users (goto =>
+        a(href="/users") /users
+        | )
+      li
+        | CRUD products (goto =>
+        a(href="/products") /products
+        | )
+      li
+        | CRUD commands (goto =>
+        a(href="/commands") /commands
+        | )
+      li
+        | CRUD comments (goto =>
+        a(href="/comments") /comments
+        | )
+    p
+      i clicks and clacks are free form data
+    p
+      i users should respect user template
+    p
+      i products should respect product template
+    p
+      i commands should respect command template
+    p
+      i CRUD = Create + Read + Update + Delete
