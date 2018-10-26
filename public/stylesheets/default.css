@@ -1,0 +1,55 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input{
+  background-color: white;
+  border: 2px blue solid;
+  border-radius: 6px;
+  padding: 5;
+}
+
+.error{
+  color: red;Adrian66
+}
+
+.button{
+  border-radius: 6px;
+  border-color: darkgrey;
+  padding: 5px;
+  width: 100px;
+  height: 25px;
+  vertical-align: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button-create{
+  background-color: blue;
+  color: white;
+}
+
+.button-update{
+  background-color: orange;
+  color: white;
+}
+
+.button-delete{
+  background-color: red;
+  color: white;
+}
+
+.button-submit{
+  background-color: green;
+  color: white;
+}
+
+.button-link{
+  background-color: yellow;
+  color: black;
+}

@@ -2,6 +2,7 @@ doctype html
 html
   head
     title ClickClack
+    link(rel='stylesheet', href='/stylesheets/default.css')
     link(rel='stylesheet', href='/stylesheets/index.css')
   body
     h1 ClickClack
@@ -14,27 +15,33 @@ html
     ul
       li
         | CRUD clicks (goto =>
-        a(href="/clicks") /clicks
+        a(href="/clicks")
+          button.button.button-link /clicks
         | )
       li
         | CRUD clacks (goto =>
-        a(href="/clacks") /clacks
+        a(href="/clacks")
+          button.button.button-link /clacks
         | )
       li
         | CRUD users (goto =>
-        a(href="/users") /users
+        a(href="/users")
+          button.button.button-link /users
         | )
       li
         | CRUD products (goto =>
-        a(href="/products") /products
+        a(href="/products")
+          button.button.button-link /products
         | )
       li
         | CRUD commands (goto =>
-        a(href="/commands") /commands
+        a(href="/commands")
+          button.button.button-link /commands
         | )
       li
         | CRUD comments (goto =>
-        a(href="/comments") /comments
+        a(href="/comments")
+          button.button.button-link /comments
         | )
     p
       i clicks and clacks are free form data

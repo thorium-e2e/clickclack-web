@@ -1,0 +1,29 @@
+html
+  head
+    title Create Clack
+    link(rel='stylesheet', href='/stylesheets/default.css')
+    link(rel='stylesheet', href='/stylesheets/create.css')
+    link(rel='stylesheet', href='/stylesheets/clacks.css')
+    script(src='/javascripts/create-clacks.js')
+  body
+    a(href="/clacks")
+      button.button.button-link back
+    h1 Create a new Clack
+    p.text.text-info
+      i Clacks are free form data
+    p.text.text-info
+      i Add as many attributes as you want !
+    form.form.form-create#form-create-clack(method='POST', action='/clacks')
+      div.fields#clack-fields
+        p.input.input-free-form
+          label key :
+          =" "
+          input(type='text', name="keys")
+          =" "
+          label value :
+          =" "
+          input(type='text', name="values")
+      p
+        button.button.button-reset(type='reset') Reset
+        button.button.button-create(type='button', onClick="addKeyValueFields()") Add
+        button.button.button-submit(type='submit') Submit
