@@ -1,0 +1,10 @@
+html
+  head
+    title Clacks
+    link(rel='stylesheet', href='/stylesheets/clacks.css')
+  body
+    ul
+      for clack in clacks
+        li= JSON.stringify(clack, null, '\t')
+      else
+        li sorry, no clacks!

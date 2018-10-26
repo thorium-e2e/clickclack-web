@@ -14,8 +14,8 @@ router.get('/', function(req, res, next) {
     } else {
       res.render('error', {
         "error": {
-          "stack": error,
-          "status": 404
+          "stack": process.env.DEV || process.env.REC ? error : "error stack is hidden",
+          "status": "API Call Failed"
         },
         "message": "Unable to find clacks"
       })
