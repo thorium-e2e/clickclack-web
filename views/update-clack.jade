@@ -1,0 +1,31 @@
+html
+  head
+    title Create Clack
+    link(rel='stylesheet', href='/stylesheets/default.css')
+    link(rel='stylesheet', href='/stylesheets/update.css')
+    link(rel='stylesheet', href='/stylesheets/clacks.css')
+    script(src='/javascripts/update-clacks.js')
+  body
+    a(href="/clacks")
+      button.button.button-link back
+    h1 Update Clack
+    p #{JSON.stringify(clack)}
+    p.text.text-info
+      i Clacks are free form data
+    p.text.text-info
+      i Add as many attributes as you want !
+    form.form.form-update#form-update-clack(method='POST', action='/clacks/#{clack._id}')
+      div.fields#clack-fields
+        for value, key in clack
+          - if (key.includes("id"))
+            input(type="hidden")
+          - else
+            p.input.input-free-form
+              label="key : " 
+              input(type="text", name="keys", value="#{key}")
+              label=" value : "
+              input(type="text", name="values", value="#{value}")
+      p
+        button.button.button-reset(type='reset') Reset
+        button.button.button-create(type='button', onClick="addKeyValueFields()") Add
+        button.button.button-submit(type='submit') Submit

@@ -14,8 +14,11 @@ html
     ol.content-list#clacks-list
       for clack in clacks
         li.content-item.clack
-          | #{JSON.stringify(clack, null, '\t')}
-        button.button.button-update update
-        button.button.button-delete delete
+          p #{JSON.stringify(clack, null, '\t')}
+          p
+            a(href="/clacks/#{clack._id}/update")
+              button.button.button-update update
+            a(href="/clacks/#{clack._id}/delete")
+              button.button.button-delete delete
       else
         li.error.error#no-clacks sorry, no clacks!

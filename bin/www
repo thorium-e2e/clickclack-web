@@ -1,6 +1,14 @@
 #!/usr/bin/env node
 
 /**
+ * bin/www
+ *
+ * Server main script
+ *
+ * author: apothuaud
+ */
+
+/**
  * Module dependencies.
  */
 
@@ -86,5 +94,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  debug('ClickClack-Web server is listening on port ' + bind);
 }

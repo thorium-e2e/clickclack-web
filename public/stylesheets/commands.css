@@ -1,8 +1,10 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+/*
+  stylesheets/commands.css
 
-a {
-  color: #00B7FF;
-}
+  styles for commands pages
+  common for
+    - list page
+    - create page
+
+  author: apothuaud
+*/

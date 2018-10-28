@@ -1,12 +1,34 @@
+/*
+  stylesheets/default.css
+
+  styles by default
+  common for all pages
+
+  author: apothuaud
+*/
+
+/*
+* === Tags ===
+*/
+
+/*
+* — page body —
+*/
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+/*
+* — links —
+*/
 a {
   color: #00B7FF;
 }
 
+/*
+* — inputs —
+*/
 input{
   background-color: white;
   border: 2px blue solid;
@@ -14,10 +36,20 @@ input{
   padding: 5;
 }
 
+/*
+* === Classes ===
+*/
+
+/*
+* — error messages —
+*/
 .error{
   color: red;Adrian66
 }
 
+/*
+* — buttons —
+*/
 .button{
   border-radius: 6px;
   border-color: darkgrey;
@@ -53,3 +85,7 @@ input{
   background-color: yellow;
   color: black;
 }
+
+/*
+* === IDs ===
+*/

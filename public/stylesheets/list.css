@@ -1,3 +1,24 @@
+/*
+  stylesheets/list.css
+
+  styles for list pages
+  common for
+    - clacks
+    - clicks
+    - users
+    - products
+    - commands
+
+  author: apothuaud
+*/
+
+/*
+* === Classes ===
+*/
+
+/*
+* — list items —
+*/
 .content-item{
   margin: 5px;
 }
