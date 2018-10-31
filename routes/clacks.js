@@ -31,25 +31,28 @@ API_URI = process.env.API_URI || "http://localhost:5000";
  */
 router.get('/', function(req, res, next) {
   // call to api /clacks
+  debug("GET /clacks");
   request.get(
     { url: API_URI + "/clacks" },
     function(error, response, body) {
-    if (!error && response.statusCode == 200) {
-      // parse to JSON
-      publicBody = JSON.parse(body);
-      // render page
-      res.render( 'clacks', { "clacks": publicBody } );
-    } else {
-      // render error page
-      res.render('error', {
-        "error": {
-          "stack": process.env.DEV || process.env.REC ?
-          error : "error stack is hidden",
-          "status": "API Call Failed"
-        },
-        "message": "Unable to find clacks"
-      })
-    }
+        debug("Request to : " + API_URI + "/clacks");
+        if (!error && response.statusCode == 200) {
+          // parse to JSON
+          publicBody = JSON.parse(body);
+          // render page
+          res.render( 'clacks', { "clacks": publicBody } );
+        } else {
+            debug(err);
+          // render error page
+          res.render('error', {
+            "error": {
+              "stack": process.env.DEV || process.env.REC ?
+              error : "error stack is hidden",
+              "status": "API Call Failed"
+            },
+            "message": "Unable to find clacks"
+          })
+        }
   });
 });
 
