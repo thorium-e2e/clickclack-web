@@ -43,7 +43,7 @@ router.get('/', function(req, res, next) {
           // render page
           res.render( 'clacks', { "clacks": publicBody } );
         } else {
-            debug(err);
+            debug(error);
           // render error page
           res.render('error', {
             "error": {
