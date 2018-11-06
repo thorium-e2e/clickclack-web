@@ -14,7 +14,11 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+<<<<<<< HEAD
 var debug = require('debug')('clickclack-web:server');
+=======
+var debug = require('debug')('clickclack-web');
+>>>>>>> review draft v1
 
 /**
  * Variables
@@ -23,6 +27,7 @@ var debug = require('debug')('clickclack-web:server');
 // set env variable in production
 // local in development
 API_URI = process.env.API_URI || "http://localhost:5000";
+debug("API_URI is " + API_URI);
 
 /**
  * List all clacks.
@@ -31,11 +36,13 @@ API_URI = process.env.API_URI || "http://localhost:5000";
  * renders clacks page with clacks object (response body)
  */
 router.get('/', function(req, res, next) {
+  debug("server receives a request", "GET /clacks");
   // call to api /clacks
   debug("GET /clacks");
   request.get(
     { url: API_URI + "/clacks" },
     function(error, response, body) {
+<<<<<<< HEAD
         debug("Request to : " + API_URI + "/clacks");
         if (!error && response.statusCode == 200) {
           // parse to JSON
@@ -54,6 +61,26 @@ router.get('/', function(req, res, next) {
             "message": "Unable to find clacks"
           })
         }
+=======
+      debug("server interacts with API", "GET API_URI/clacks");
+      if (!error && response.statusCode == 200) {
+        // parse to JSON
+        publicBody = JSON.parse(body);
+        debug("server interacts with API", "Found " + publicBody.length + " clacks");
+        // render page
+        res.render( 'clacks', { "clacks": publicBody } );
+      } else {
+        // render error page
+        res.render('error', {
+          "error": {
+            "stack": process.env.DEV || process.env.REC ?
+            error : "error stack is hidden",
+            "status": "API Call Failed"
+          },
+          "message": "Unable to find clacks"
+        })
+      }
+>>>>>>> review draft v1
   });
 });
 
