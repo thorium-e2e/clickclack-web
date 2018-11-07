@@ -14,11 +14,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-<<<<<<< HEAD
-var debug = require('debug')('clickclack-web:server');
-=======
 var debug = require('debug')('clickclack-web');
->>>>>>> review draft v1
 
 /**
  * Variables
@@ -42,26 +38,6 @@ router.get('/', function(req, res, next) {
   request.get(
     { url: API_URI + "/clacks" },
     function(error, response, body) {
-<<<<<<< HEAD
-        debug("Request to : " + API_URI + "/clacks");
-        if (!error && response.statusCode == 200) {
-          // parse to JSON
-          publicBody = JSON.parse(body);
-          // render page
-          res.render( 'clacks', { "clacks": publicBody } );
-        } else {
-            debug(error);
-          // render error page
-          res.render('error', {
-            "error": {
-              "stack": process.env.DEV || process.env.REC ?
-              error : "error stack is hidden",
-              "status": "API Call Failed"
-            },
-            "message": "Unable to find clacks"
-          })
-        }
-=======
       debug("server interacts with API", "GET API_URI/clacks");
       if (!error && response.statusCode == 200) {
         // parse to JSON
@@ -80,7 +56,6 @@ router.get('/', function(req, res, next) {
           "message": "Unable to find clacks"
         })
       }
->>>>>>> review draft v1
   });
 });
 
