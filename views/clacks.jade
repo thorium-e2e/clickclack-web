@@ -5,16 +5,21 @@ html
     link(rel='stylesheet', href='/stylesheets/list.css')
     link(rel='stylesheet', href='/stylesheets/clacks.css')
   body
-    a(href="/")
-      button.button.button-link back
-    h1 Clacks content
-    a(href="/clacks/create")
-      button.button.button-create create
+    nav
+      div.nav-nav
+        a(href="/")
+          button.button.button-link back
+      div.nav-title    
+        h1 Clacks content
+      div.nav-page-actions
+        a(href="/clacks/create")
+          button.button.button-create create
     h2 List
     ol.content-list#clacks-list
       for clack in clacks
         li.content-item.clack
-          p #{JSON.stringify(clack, null, '\t')}
+          a(href="/clacks/#{clack._id}/details")
+            p #{JSON.stringify(clack, null, '\t')}
           p
             a(href="/clacks/#{clack._id}/update")
               button.button.button-update update

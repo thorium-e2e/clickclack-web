@@ -22,3 +22,8 @@
 .content-item{
   margin: 5px;
 }
+
+.content-item a{
+  text-decoration: none;
+  color: inherit;
+}
