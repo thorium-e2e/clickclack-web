@@ -5,23 +5,23 @@ html
     link(rel='stylesheet', href='/stylesheets/default.css')
     link(rel='stylesheet', href='/stylesheets/index.css')
   body
-    h1 ClickClack
-    h2 Introduction
-    p Welcome to ClickClack !
-    p ClickClack is a website sample.
-    p ClickClack website is using ClickClack API.
-    h2 Content
-    p In ClickClack you can:
-    ul
-      
-      li
-        | CRUD clacks (goto =>
-        a(href="/clacks")
-          button.button.button-link /clacks
-        | )
-      
-    p
-      i clacks are free form data
-  
-    p
-      i CRUD = Create + Read + Update + Delete
+    h1#title ClickClack
+    div#intro
+      h2 Introduction
+      p Welcome to ClickClack !
+      p ClickClack is a website sample.
+      p ClickClack website is using ClickClack API.
+    div#content
+      h2 Content
+      p In ClickClack you can:
+      ul
+        li
+          | CRUD clacks (goto =>
+          a(href="/clacks")
+            button.button.button-link /clacks
+          | )
+      div#content-info
+        p
+          i clacks are free form data
+        p
+          i CRUD = Create + Read + Update + Delete
