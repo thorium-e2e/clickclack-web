@@ -8,22 +8,23 @@ html
     nav
       div.nav-nav
         a(href="/")
-          button.button.button-link back
+          button.button.button-link#link-back-home back
       div.nav-title    
         h1 Clacks content
-      div.nav-page-actions
+      div.nav-page-actions#link-create-clack
         a(href="/clacks/create")
           button.button.button-create create
-    h2 List
-    ol.content-list#clacks-list
-      for clack in clacks
-        li.content-item.clack
-          a(href="/clacks/#{clack._id}/details")
-            p #{JSON.stringify(clack, null, '\t')}
-          p
-            a(href="/clacks/#{clack._id}/update")
-              button.button.button-update update
-            a(href="/clacks/#{clack._id}/delete")
-              button.button.button-delete delete
-      else
-        li.error.error#no-clacks sorry, no clacks!
+    main
+      h2 List
+      ol.content-list#clacks-list
+        for clack in clacks
+          li.content-item.clack
+            a(href="/clacks/#{clack._id}/details")
+              p #{JSON.stringify(clack, null, '\t')}
+            p
+              a(href="/clacks/#{clack._id}/update")
+                button.button.button-update update
+              a(href="/clacks/#{clack._id}/delete")
+                button.button.button-delete delete
+        else
+          li.error.error#no-clacks sorry, no clacks!
