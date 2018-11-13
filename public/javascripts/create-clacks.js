@@ -65,6 +65,7 @@ function addKeyValueFields() {
   newDeleteButton = document.createElement("button");
   newDeleteButton.classList.add('button');
   newDeleteButton.classList.add('button-delete');
+  newDeleteButton.id = "btn-rm-fields"
   newDeleteButton.type = "button";
   newDeleteButton.onclick = deleteKeyValueFields;
   newDeleteButton.innerHTML = "[ X ]";

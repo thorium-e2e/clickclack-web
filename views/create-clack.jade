@@ -6,7 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/clacks.css')
     script(src='/javascripts/create-clacks.js')
   body
-    a(href="/clacks")
+    a(href="/clacks")#lnk-clacks
       button.button.button-link back
     h1 Create a new Clack
     p.text.text-info
@@ -25,5 +25,5 @@ html
           input(type='text', name="values")
       p
         button.button.button-reset(type='reset') Reset
-        button.button.button-create(type='button', onClick="addKeyValueFields()") Add
+        button.button.button-create#btn-add-fields(type='button', onClick="addKeyValueFields()") Add
         button.button.button-submit(type='submit') Submit

@@ -96,7 +96,20 @@ router.post('/', function(req, res, next) {
 });
 
 /* DELETE Clack */
+router.get('/:id/delete_confirm', function(req, res, next) {
+  request({
+    url: API_URI + "/clacks/" + req.params.id,
+    method: "GET"
+  }, function(err, req2, res2){
+    if(err) throw err;
+    console.log(res2);
+    res.render('delete-clack', { "clack": JSON.parse(res2) });
+  });
+});
+
+/* Confirm DELETE Clack */
 router.get('/:id/delete', function(req, res, next) {
+  debug("server receives a request", "GET /clacks/" + req.params.id + "/delete");
   request({
     url: API_URI + "/clacks/" + req.params.id,
     method: "DELETE"
@@ -136,6 +149,36 @@ router.post('/:id', function(req, res, next) {
   }, function(err, req2, res2) {
     if(err) throw err;
     res.redirect('/clacks');
+  });
+});
+
+/**
+ * get a clack details.
+ *
+ * make a get request to the dedicated api /clacks/id
+ * renders clack details page with clack object (response body)
+ */
+router.get('/:id/details', function(req, res, next) {
+  debug("server receives a request", "GET /clacks/" + req.params.id + "/details");
+  request.get(
+    { url: API_URI + "/clacks/" + req.params.id },
+    function(error, response, body) {
+      debug("server interacts with API", "GET API_URI/clacks/" + req.params.id);
+      if (!error && response.statusCode == 200) {
+        debug("server interacts with API", "Found 1 clacks");
+        // render page
+        res.render( 'clack-details', { "clack": JSON.parse(response.body) } );
+      } else {
+        // render error page
+        res.render('error', {
+          "error": {
+            "stack": process.env.DEV || process.env.REC ?
+            error : "error stack is hidden",
+            "status": "API Call Failed"
+          },
+          "message": "Unable to find clacks"
+        })
+      }
   });
 });
 

@@ -1,0 +1,16 @@
+/*
+  stylesheets/update.css
+
+  styles for update pages
+  common for
+    - clacks
+    - clicks
+    - users
+    - products
+    - commands
+
+  author: apothuaud
+*/
+#confirm-delete-label{
+  font-weight: bold;
+}

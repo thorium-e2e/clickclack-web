@@ -1,0 +1,14 @@
+html
+  head
+    title Clack #{clack._id}
+    link(rel='stylesheet', href='/stylesheets/default.css')
+    link(rel='stylesheet', href='/stylesheets/details.css')
+    link(rel='stylesheet', href='/stylesheets/clacks.css')
+    script(src='/javascripts/update-clacks.js')
+  body
+    a(href="/clacks")
+      button.button.button-link back
+    h1 Clack details
+    p #{JSON.stringify(clack)}
+    p.text.text-info
+      i Clacks are free form data
