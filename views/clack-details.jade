@@ -6,9 +6,12 @@ html
     link(rel='stylesheet', href='/stylesheets/clacks.css')
     script(src='/javascripts/update-clacks.js')
   body
-    a(href="/clacks")
+    a(href="/clacks")#link-list
       button.button.button-link back
     h1 Clack details
     p #{JSON.stringify(clack)}
+    p
+        a(href="/clacks/#{clack._id}/update")#link-update
+            button.button.button-create update
     p.text.text-info
       i Clacks are free form data

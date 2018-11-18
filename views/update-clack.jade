@@ -7,7 +7,7 @@ html
     script(src='/javascripts/update-clacks.js')
   body
     a(href="/clacks")
-      button.button.button-link back
+      button.button.button-link#lnk-clacks back
     h1 Update Clack
     p #{JSON.stringify(clack)}
     p.text.text-info
@@ -27,5 +27,5 @@ html
               input(type="text", name="values", value="#{value}")
       p
         button.button.button-reset(type='reset') Reset
-        button.button.button-create(type='button', onClick="addKeyValueFields()") Add
+        button.button.button-create#btn-add-fields(type='button', onClick="addKeyValueFields()") Add
         button.button.button-submit(type='submit') Submit
