@@ -1,0 +1,36 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Draft v1] - 2018-11-19
+
+### Added
+- Home Page with simple UX
+  - from Home Page we can go to Clacks List Page
+- Clacks List Page
+  - from List Page we can Create Clacks
+  - from List Page we can go to Clack Details Page
+  - from List Page we can delete Clacks
+  - from List Page we can update Clacks
+- Clacks Creation Page
+  - Clack form with possibility to add new fields
+- Clack Details Page
+  - from details we can update
+  - from details we can delete
+- Clack Update Page
+  - Clack form with already existing fields
+  - possibility to add new fields
+
+### Changed
+None
+
+### Removed
+None
+
+### Fixed
+None
+
+## [Draft v2] - ...
+...
