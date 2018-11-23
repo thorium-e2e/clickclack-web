@@ -1,0 +1,47 @@
+image: node:latest
+
+stages:
+    - deploy to REC
+    - test in REC
+    - deploy to PROD
+
+build-job:
+  stage: deploy to REC
+  environment:
+    name: REC
+    url: https://rec-clickclack-web.herokuapp.com
+  image: ruby:latest
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=rec-clickclack-web --api-key=$HEROKU_API_KEY
+  
+test-unit-rec-job:
+  stage: test in REC
+  script: echo "Running unit tests in REC"
+  
+test-int-rec-job:
+  stage: test in REC
+  script: echo "Running integration tests in REC"
+  
+test-fun-rec-job:
+  stage: test in REC
+  script: echo "Running functional tests in REC"
+  
+test-e2e-rec-job:
+  stage: test in REC
+  script: echo "Running end to end tests in REC"
+
+production-job:
+  stage: deploy to PROD
+  when: manual
+  environment:
+    name: PROD
+    url: https://clickclack-web.herokuapp.com
+  image: ruby:latest
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=rec-clickclack-web --api-key=$HEROKU_API_KEY
