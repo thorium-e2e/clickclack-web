@@ -6,10 +6,10 @@ branches:
 
 deploy:
   provider: heroku
-  api_key: ...
+  api_key: 3a12d835-fb52-4977-946b-7a0c30a0bad5
   app:
-    master: my-app-staging
-    production: my-app-production
+    master: rec-clickclack-web
+    production: clickclack-web
 
 jobs:
   include:
