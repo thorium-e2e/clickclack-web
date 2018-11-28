@@ -1,9 +1,0 @@
-com/apothuaud/selenium/common/PageObject.class
-com/apothuaud/selenium/clickclack/web/pages/HomePage.class
-com/apothuaud/selenium/clickclack/web/pages/ClacksDeletePage.class
-com/apothuaud/selenium/common/TestSet.class
-com/apothuaud/selenium/clickclack/web/pages/ClacksDetailsPage.class
-com/apothuaud/selenium/clickclack/web/pages/ClacksListPage.class
-com/apothuaud/selenium/clickclack/web/pages/ClacksUpdatePage.class
-com/apothuaud/selenium/clickclack/web/pages/ClacksCreatePage.class
-com/apothuaud/selenium/common/OSValidator.class
