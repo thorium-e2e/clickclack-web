@@ -6,6 +6,7 @@
 
     <groupId>com.thorium</groupId>
     <artifactId>selenium-page-objects</artifactId>
+    <version>1.0.1</version>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
