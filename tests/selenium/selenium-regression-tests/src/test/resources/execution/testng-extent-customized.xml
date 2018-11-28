@@ -1,0 +1,93 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ClickClack Web Draft v1">
+
+    <listeners>
+
+        <listener class-name="com.apothuaud.selenium.CustomExtentListener"></listener>
+
+    </listeners>
+
+    <test name="HomePage">
+
+        <classes>
+
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.HomePageUnitTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.HomePageIntegrationTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.HomePageFunctionalTestSet" />
+
+        </classes>
+
+    </test>
+
+    <test name="ClacksListPage">
+
+        <classes>
+
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksListPageUnitTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksListPageIntegrationTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksListPageFunctionalTestSet" />
+
+        </classes>
+
+    </test>
+
+    <test name="ClacksCreatePage">
+
+        <classes>
+
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksCreatePageUnitTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksCreatePageIntegrationTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksCreatePageFunctionalTestSet" />
+
+        </classes>
+
+    </test>
+
+    <test name="ClacksDetailsPage">
+
+        <classes>
+
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDetailsPageUnitTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDetailsPageIntegrationTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDetailsPageFunctionalTestSet" />
+
+        </classes>
+
+    </test>
+
+    <test name="ClacksUpdatePage">
+
+        <classes>
+
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksUpdatePageUnitTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksUpdatePageIntegrationTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksUpdatePageFunctionalTestSet" />
+
+        </classes>
+
+    </test>
+
+    <test name="ClacksDeletePage">
+
+        <classes>
+
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDeletePageUnitTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDeletePageIntegrationTestSet" />
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDeletePageFunctionalTestSet" />
+
+        </classes>
+
+    </test>
+
+    <test name="end to end">
+
+        <classes>
+
+            <class name="com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksEndToEndTestSet" />
+
+        </classes>
+
+    </test>
+
+</suite>

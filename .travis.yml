@@ -11,13 +11,9 @@ jobs:
         echo "buidling heroku rec application"
     - stage: run tests on rec app
       script:
-        - cd tests/nr/
-        - cd selenium-page-objects
+        - cd tests/selenium
         - mvn clean
-        - mvn install
-        - cd ../selenium-regression-tests
-        - mvn clean
-        - mvn test
+        - mvn test -pl selenium-regression-tests
     - stage: report test results
       script: echo "report test results"
     - stage: deploy heroku prod app
