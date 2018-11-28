@@ -8,7 +8,7 @@ jobs:
   include:
     - stage: build heroku rec app
       script:
-        echo 'buidling heroku rec application"
+        echo "buidling heroku rec application"
     - stage: install page objects
       script:
         - cd tests/nr/
