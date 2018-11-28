@@ -18,6 +18,8 @@
             <groupId>com.apothuaud</groupId>
             <artifactId>selenium-page-objects</artifactId>
             <version>1.0.1</version>
+            <scope>system</scope>
+            <systemPath>tests/selenium/selenium-page-objects/target/selenium-page-objects-1.0.1.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>

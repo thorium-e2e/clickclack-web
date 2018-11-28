@@ -4,6 +4,13 @@ branches:
   only:
   - master
 
+deploy:
+  provider: heroku
+  api_key: ...
+  app:
+    master: my-app-staging
+    production: my-app-production
+
 jobs:
   include:
     - stage: build heroku rec app
