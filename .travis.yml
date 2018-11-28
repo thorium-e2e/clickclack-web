@@ -1,0 +1,15 @@
+language: java
+
+branches:
+  only:
+  - master
+
+install:
+  - mvn clean
+
+script:
+  - echo "testing"
+
+notifications:
+  slack:
+    on_success: always
