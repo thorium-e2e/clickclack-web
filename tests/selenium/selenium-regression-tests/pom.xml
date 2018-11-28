@@ -19,7 +19,7 @@
             <artifactId>selenium-page-objects</artifactId>
             <version>1.0.1</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/tests/selenium/selenium-page-objects/target/selenium-page-objects-1.0.1.jar</systemPath>
+            <systemPath>${basedir}/tests/selenium/selenium-page-objects/target/selenium-page-objects-1.0.1.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
