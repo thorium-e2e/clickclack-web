@@ -2,145 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="392015fe-8dc4-4c0f-b95e-25928b38c7d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/clickclack/web/pages/ClacksCreatePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/clickclack/web/pages/ClacksDeletePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/clickclack/web/pages/ClacksDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/clickclack/web/pages/ClacksListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/clickclack/web/pages/ClacksUpdatePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/clickclack/web/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/common/OSValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/common/PageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-page-objects/src/main/java/com/apothuaud/selenium/common/TestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/main/java/com/apothuaud/selenium/CustomExtentListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/main/java/com/apothuaud/selenium/ExtentListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/main/java/com/apothuaud/selenium/clickclack/Clack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksCreatePageFunctionalTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksCreatePageIntegrationTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksCreatePageUnitTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDeletePageFunctionalTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDeletePageIntegrationTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDeletePageUnitTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDetailsPageFunctionalTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDetailsPageIntegrationTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDetailsPageUnitTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksEndToEndTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksListPageFunctionalTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksListPageIntegrationTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksListPageUnitTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksUpdatePageFunctionalTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksUpdatePageIntegrationTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksUpdatePageUnitTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/HomePageFunctionalTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/HomePageIntegrationTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/java/com/apothuaud/selenium/clickclack/web/tests/draft/v1/HomePageUnitTestSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/resources/config/env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/resources/drivers/chromedriver_linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/resources/drivers/chromedriver_mac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/resources/drivers/chromedriver_win.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/resources/execution/testng-extent-customized.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/resources/execution/testng-extent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/src/test/resources/execution/testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/classes/com/apothuaud/selenium/CustomExtentListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/classes/com/apothuaud/selenium/ExtentListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/classes/com/apothuaud/selenium/clickclack/Clack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksCreatePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksCreatePage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksDeletePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksDeletePage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksDetailsPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksDetailsPage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksListPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksListPage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksUpdatePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/ClacksUpdatePage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/HomePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/HomePage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/end to end.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/ClickClack Web Draft v1/end to end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/bullet_point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/collapseall.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/failed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/jquery-1.7.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksCreatePageFunctionalTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksCreatePageIntegrationTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksCreatePageUnitTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDeletePageFunctionalTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDeletePageIntegrationTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDeletePageUnitTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDetailsPageFunctionalTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDetailsPageIntegrationTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksDetailsPageUnitTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksEndToEndTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksListPageIntegrationTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksListPageUnitTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksUpdatePageFunctionalTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksUpdatePageIntegrationTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.ClacksUpdatePageUnitTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.HomePageIntegrationTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/junitreports/TEST-com.apothuaud.selenium.clickclack.web.tests.draft.v1.HomePageUnitTestSet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/navigator-bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/ClacksCreatePage.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/ClacksDeletePage.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/ClacksDetailsPage.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/ClacksListPage.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/ClacksUpdatePage.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/HomePage.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/end to end.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/ClickClack Web Draft v1/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/skipped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/surefire-reports/testng.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksCreatePageFunctionalTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksCreatePageIntegrationTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksCreatePageUnitTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDeletePageFunctionalTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDeletePageIntegrationTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDeletePageUnitTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDetailsPageFunctionalTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDetailsPageIntegrationTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksDetailsPageUnitTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksEndToEndTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksListPageFunctionalTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksListPageIntegrationTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksListPageUnitTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksUpdatePageFunctionalTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksUpdatePageIntegrationTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/ClacksUpdatePageUnitTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/HomePageFunctionalTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/HomePageIntegrationTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/com/apothuaud/selenium/clickclack/web/tests/draft/v1/HomePageUnitTestSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/config/env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/drivers/chromedriver_linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/drivers/chromedriver_mac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/drivers/chromedriver_win.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/execution/testng-extent-customized.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/execution/testng-extent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nr/selenium-regression-tests/target/test-classes/execution/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,12 +20,12 @@
     <periodicRefresh>false</periodicRefresh>
     <languageLevel>1.8 - lambda functions, virtual extension methods.</languageLevel>
     <instrumentLambda class="com.atlassian.clover.cfg.instr.java.LambdaInstrumentation">NONE</instrumentLambda>
-    <autoScrollFromSource>false</autoScrollFromSource>
     <testCaseLayout class="com.atlassian.clover.idea.config.TestCaseLayout">TEST_CASES</testCaseLayout>
+    <autoScrollFromSource>false</autoScrollFromSource>
     <coveredHighlight>-3605816</coveredHighlight>
     <outOfDateStripe>-256</outOfDateStripe>
-    <excludes null="true" />
     <includes null="true" />
+    <excludes null="true" />
     <alwaysExpandTestClasses>false</alwaysExpandTestClasses>
     <autoViewInCloudReport>true</autoViewInCloudReport>
     <flushPolicy>0</flushPolicy>
@@ -189,8 +52,8 @@
     <generatedInitString>$PROJECT_DIR$/.clover/coverage.db</generatedInitString>
     <regexpContexts class="java.util.ArrayList" />
     <flushInterval>5000</flushInterval>
-    <flattenPackages>false</flattenPackages>
     <viewIncludeAnnotation>true</viewIncludeAnnotation>
+    <flattenPackages>false</flattenPackages>
     <loadPerTestData>true</loadPerTestData>
     <showErrorMarks>true</showErrorMarks>
     <buildWithClover>true</buildWithClover>
@@ -218,8 +81,10 @@
     <session id="-1993429886">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -239,13 +104,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="xml" value="2" />
-          <entry key="yml" value="73" />
+          <entry key="yml" value="177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="XML" value="2" />
-          <entry key="YAML" value="73" />
+          <entry key="YAML" value="177" />
         </counts>
       </usages-collector>
     </session>
@@ -283,8 +148,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -309,16 +174,17 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="56" />
+    <option name="y" value="30" />
+    <option name="width" value="1369" />
+    <option name="height" value="869" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -338,28 +204,15 @@
               <item name="tests" type="bbb3b172:PsiDirectoryNodeWrapper" />
               <item name="nr" type="bbb3b172:PsiDirectoryNodeWrapper" />
             </path>
-            <path>
-              <item name="clickclack-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clickclack-web" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="tests" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="nr" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="selenium-page-objects" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="clickclack-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clickclack-web" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="tests" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="nr" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="selenium-regression-tests" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543377570775" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543377781537" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -393,18 +246,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Cloverage" />
-      <window_info id="Image Layers" />
-      <window_info id="Test Runs" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25608012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Cloverage" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Test Runs" order="7" />
+      <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -415,14 +268,14 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -451,8 +304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

@@ -4,11 +4,11 @@ branches:
   only:
   - master
 
-install:
-  - mvn clean
-
 script:
-  - echo "testing"
+  - cd tests/nr/selenium-page-objects
+  - mvn install
+  - cd ../selenium-regression-tests
+  - mvn test
 
 notifications:
   slack:
