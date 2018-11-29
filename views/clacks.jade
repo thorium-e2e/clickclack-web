@@ -7,24 +7,24 @@ html
   body
     nav
       div.nav-nav
-        a(href="/")
+        a(href="/", selenium-id="link-back-home")
           button.button.button-link#link-back-home back
-      div.nav-title    
+      div.nav-title
         h1 Clacks content
       div.nav-page-actions
-        a(href="/clacks/create")#link-create-clack
+        a(href="/clacks/create", selenium-id="link-create-clack")#link-create-clack
           button.button.button-create create
     main
       h2 List
-      ol.content-list#clacks-list
+      ol.content-list(selenium-id="clacks-list")#clacks-list
         for clack in clacks
           li.content-item.clack
             a(href="/clacks/#{clack._id}/details")
               p #{JSON.stringify(clack, null, '\t')}
             p
-              a(href="/clacks/#{clack._id}/update")
+              a(href="/clacks/#{clack._id}/update", selenium-id="btn-update-clack")
                 button.button.button-update update
-              a(href="/clacks/#{clack._id}/delete_confirm")
+              a(href="/clacks/#{clack._id}/delete_confirm", selenium-id="btn-delete-clack")
                 button.button.button-delete delete
         else
-          li.error.error#no-clacks sorry, no clacks!
+          li.error.error(selenium-id="err-msg-no-clacks")#no-clacks sorry, no clacks!
