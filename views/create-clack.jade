@@ -7,23 +7,23 @@ html
     script(src='/javascripts/create-clacks.js')
   body
     a(href="/clacks")
-      button(testsAutoId="btn-to-clacks-list").button.button-link back
+      button(testsautoid="btn-to-clacks-list").button.button-link back
     h1 Create a new Clack
     p.text.text-info
       i Clacks are free form data
     p.text.text-info
       i Add as many attributes as you want !
-    form.form.form-create(method='POST', action='/clacks', testsAutoId="form-create-clack")
-      div.fields
-        p(testsAutoId="clack-fields-pair").input.input-free-form
+    form.form.form-create(method='POST', action='/clacks', testsautoid="form-create-clack")
+      div.fields#clack-fields
+        p(testsautoid="clack-fields-pair").input.input-free-form
           label key :
           =" "
-          input(type='text', name="keys", id="keys", testsAutoId="input-key")
+          input(type='text', name="keys", id="keys", testsautoid="input-key")
           =" "
           label value :
           =" "
-          input(type='text', name="values", id="values", testsAutoId="input-value")
+          input(type='text', name="values", id="values", testsautoid="input-value")
       p
-        button.button.button-reset(type='reset', testsAutoId="btn-reset-form") Reset
-        button.button.button-create(type='button', onClick="addKeyValueFields()", testsAutoId="btn-add-fields") Add
-        button.button.button-submit(type='submit', testsAutoId="btn-submit-form") Submit
+        button.button.button-reset(type='reset', testsautoid="btn-reset-form") Reset
+        button.button.button-create(type='button', onClick="addKeyValueFields()", testsautoid="btn-add-fields") Add
+        button.button.button-submit(type='submit', testsautoid="btn-submit-form") Submit

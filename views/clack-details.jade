@@ -7,11 +7,11 @@ html
     script(src='/javascripts/update-clacks.js')
   body
     a(href="/clacks")
-      button(testsAutoId="btn-to-clacks-list").button.button-link back
+      button(testsautoid="btn-to-clacks-list").button.button-link back
     h1 Clack details
     p #{JSON.stringify(clack)}
     p
         a(href="/clacks/#{clack._id}/update")
-            button(testsAutoId="btn-to-update-clack").button.button-create update
+            button(testsautoid="btn-to-update-clack").button.button-create update
     p.text.text-info
       i Clacks are free form data
