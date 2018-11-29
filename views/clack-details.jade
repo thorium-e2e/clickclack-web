@@ -6,7 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/clacks.css')
     script(src='/javascripts/update-clacks.js')
   body
-    a(href="/clacks")#link-list
+    a(href="/clacks", selenium-id="link-list")#link-list
       button.button.button-link back
     h1 Clack details
     p #{JSON.stringify(clack)}
