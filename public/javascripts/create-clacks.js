@@ -28,6 +28,7 @@ function addKeyValueFields() {
   // set classes
   newKeyValueInputs.classList.add("input");
   newKeyValueInputs.classList.add("input-free-form");
+  newKeyValueInputs.setAttribute("testsAutoId", "clack-fields-pair");
   // create element first label 'key'
   // <label>key :</label> + " "
   newLabelKey = document.createElement("label");
@@ -41,6 +42,8 @@ function addKeyValueFields() {
   // set attributes
   newInputKey.type = "text";
   newInputKey.name = "keys"; // POST params: keys will be a list
+  newInputKey.id = "keys";
+  newInputKey.setAttribute("testsAutoId", "input-key");
   // append to paragraph newKeyValueInputs
   newKeyValueInputs.appendChild(newInputKey);
   // create element second label 'value'
@@ -55,6 +58,8 @@ function addKeyValueFields() {
   // set attributes
   newInputValue.type = "text"
   newInputValue.name = "values";
+  newInputValue.id = "values";
+  newInputValue.setAttribute("testsAutoId", "input-value");
   // append to paragraph newKeyValueInputs
   newKeyValueInputs.appendChild(newInputValue);
   // create label element to add space
@@ -65,7 +70,7 @@ function addKeyValueFields() {
   newDeleteButton = document.createElement("button");
   newDeleteButton.classList.add('button');
   newDeleteButton.classList.add('button-delete');
-  newDeleteButton.id = "btn-rm-fields"
+  newDeleteButton.setAttribute("testsAutoId", "btn-delete-fields");
   newDeleteButton.type = "button";
   newDeleteButton.onclick = deleteKeyValueFields;
   newDeleteButton.innerHTML = "[ X ]";

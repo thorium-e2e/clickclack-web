@@ -41,6 +41,8 @@ function addKeyValueFields() {
   // set attributes
   newInputKey.type = "text";
   newInputKey.name = "keys"; // POST params: keys will be a list
+  newInputKey.id = "keys";
+  newInputKey.setAttribute("testsAutoId", "input-key");
   // append to paragraph newKeyValueInputs
   newKeyValueInputs.appendChild(newInputKey);
   // create element second label 'value'
@@ -55,6 +57,8 @@ function addKeyValueFields() {
   // set attributes
   newInputValue.type = "text"
   newInputValue.name = "values";
+  newInputValue.id = "values";
+  newInputValue.setAttribute("testsAutoId", "input-value");
   // append to paragraph newKeyValueInputs
   newKeyValueInputs.appendChild(newInputValue);
   // create label element to add space
@@ -65,6 +69,7 @@ function addKeyValueFields() {
   newDeleteButton = document.createElement("button");
   newDeleteButton.classList.add('button');
   newDeleteButton.classList.add('button-delete');
+  newDeleteButton.setAttribute("testsAutoId", "btn-delete-fields");
   newDeleteButton.type = "button";
   newDeleteButton.onclick = deleteKeyValueFields;
   newDeleteButton.innerHTML = "[ X ]";

@@ -7,24 +7,24 @@ html
   body
     nav
       div.nav-nav
-        a(href="/", selenium-id="link-back-home")
-          button.button.button-link#link-back-home back
+        a(href="/")
+          button(testsAutoId="btn-to-home").button.button-link back
       div.nav-title
         h1 Clacks content
       div.nav-page-actions
-        a(href="/clacks/create", selenium-id="link-create-clack")#link-create-clack
-          button.button.button-create create
+        a(href="/clacks/create")
+          button(testsAutoId="btn-to-create-clack").button.button-create create
     main
       h2 List
-      ol.content-list(selenium-id="clacks-list")#clacks-list
+      ol(testsAutoId="clacks-list").content-list
         for clack in clacks
-          li.content-item.clack
-            a(href="/clacks/#{clack._id}/details")
+          li(testsAutoId="clack").content-item.clack
+            a(href="/clacks/#{clack._id}/details", testsAutoId="lnk-to-clack-details")
               p #{JSON.stringify(clack, null, '\t')}
             p
-              a(href="/clacks/#{clack._id}/update", selenium-id="btn-update-clack")
-                button.button.button-update update
-              a(href="/clacks/#{clack._id}/delete_confirm", selenium-id="btn-delete-clack")
-                button.button.button-delete delete
+              a(href="/clacks/#{clack._id}/update")
+                button(testsAutoId="btn-to-update-clack").button.button-update update
+              a(href="/clacks/#{clack._id}/delete_confirm")
+                button(testsAutoId="btn-to-delete-clack").button.button-delete delete
         else
-          li.error.error(selenium-id="err-msg-no-clacks")#no-clacks sorry, no clacks!
+          li.error.error(testsAutoId="err-no-clack") sorry, no element to display!

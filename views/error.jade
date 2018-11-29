@@ -4,6 +4,6 @@ html
     link(rel='stylesheet', href='/stylesheets/default.css')
     link(rel='stylesheet', href='/stylesheets/error.css')
   body
-    h1#error #{message}
-    h2= error.status
-    pre #{error.stack}
+    h1(testsAutoId="error-msg") #{message}
+    h2(testsAutoId="error-status")= error.status
+    pre(testsAutoId="error-stack") #{error.stack}

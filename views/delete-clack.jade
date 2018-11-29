@@ -7,12 +7,12 @@ html
     script(src='/javascripts/update-clacks.js')
   body
     a(href="/clacks")
-      button.button.button-link#link-back back
+      button(testsAutoId="btn-to-clacks-list").button.button-link back
     h1 Delete Clack
     p #{JSON.stringify(clack)}
-    p#confirm-delete-label Are you sure ?
+    p(testsAutoId="are-you-sure") Are you sure ?
     p
       a(href="/clacks")
-        button.button.button-delete(type='button') No
+        button.button.button-delete(type='button', testsAutoId="not-sure") No
       a(href="/clacks/#{clack._id}/delete")
-        button.button.button-create(type='button') Yes
+        button.button.button-create(type='button', testsAutoId="sure") Yes
