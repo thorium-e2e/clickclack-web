@@ -8,9 +8,6 @@ jobs:
     steps:
       - checkout # special step to check out source code to working directory
       - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@latest'
-      - run:
           name: install
           command: npm install
       - run: # run app
