@@ -8,23 +8,23 @@ html
     nav
       div.nav-nav
         a(href="/")
-          button(testsautoid="btn-to-home").button.button-link back
+          button#btn-to-home.button.button-link back
       div.nav-title
         h1 Clacks content
       div.nav-page-actions
         a(href="/clacks/create")
-          button(testsautoid="btn-to-create-clack").button.button-create create
+          button#btn-to-create-clack.button.button-create create
     main
       h2 List
-      ol(testsautoid="clacks-list").content-list
+      ol#clacks-list.content-list
         for clack in clacks
-          li(testsautoid="clack").content-item.clack
-            a(href="/clacks/#{clack._id}/details", testsautoid="lnk-to-clack-details")
+          li#clack.content-item.clack
+            a(href="/clacks/#{clack._id}/details")#lnk-to-clack-details
               p #{JSON.stringify(clack, null, '\t')}
             p
               a(href="/clacks/#{clack._id}/update")
-                button(testsautoid="btn-to-update-clack").button.button-update update
+                button#btn-to-update-clack.button.button-update update
               a(href="/clacks/#{clack._id}/delete_confirm")
-                button(testsautoid="btn-to-delete-clack").button.button-delete delete
+                button#btn-to-delete-clack.button.button-delete delete
         else
-          li.error.error(testsautoid="err-no-clack") sorry, no element to display!
+          li.error.error#err-no-clack sorry, no element to display!
