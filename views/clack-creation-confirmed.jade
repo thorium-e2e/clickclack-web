@@ -1,0 +1,25 @@
+html
+  head
+    title New Clack
+    link(rel='stylesheet', href='/stylesheets/default.css')
+    link(rel='stylesheet', href='/stylesheets/details.css')
+    link(rel='stylesheet', href='/stylesheets/clacks.css')
+    script(src='/javascripts/update-clacks.js')
+  body
+    a(href="/clacks")
+      button#btn-to-clacks-list.button.button-link back
+    a(href="/clacks/create")
+      button#btn-to-create-clack.button.button-create again
+    h1 New Clack
+    p You just created a new clack
+    p#new-clack-id ID = #{clack._id}
+    p #{JSON.stringify(clack)}
+    p
+      a(href="/clacks/#{clack._id}/details")
+        button#btn-to-details-clack.button.button-details details
+      a(href="/clacks/#{clack._id}/update")
+        button#btn-to-update-clack.button.button-update update
+      a(href="/clacks/#{clack._id}/delete_confirm")
+        button#btn-to-delete-clack.button.button-delete delete
+    p.text.text-info
+      i Clacks are free form data

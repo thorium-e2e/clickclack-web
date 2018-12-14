@@ -34,7 +34,6 @@ debug("API_URI is " + API_URI);
 router.get('/', function(req, res, next) {
   debug("server receives a request", "GET /clacks");
   // call to api /clacks
-  debug("GET /clacks");
   request.get(
     { url: API_URI + "/clacks" },
     function(error, response, body) {
@@ -44,7 +43,7 @@ router.get('/', function(req, res, next) {
         publicBody = JSON.parse(body);
         debug("server interacts with API", "Found " + publicBody.length + " clacks");
         // render page
-        res.render( 'clacks', { "clacks": publicBody } );
+        res.render( 'clacks', { "clacks": publicBody, "enableClearAll": true } );
       } else {
         // render error page
         res.render('error', {
@@ -59,12 +58,31 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/delete_all_confirm', function(req, res, next) {
+  debug("server receives a request", "GET /clacks/delete_all_confirm");
+  res.render("delete-clacks");
+});
+
+router.get('/delete_all', function(req, res, next) {
+  debug("server receives a request", "GET /delete_all");
+  request({
+    url: API_URI + "/clacks",
+    method: "DELETE"
+  }, function(err, req2, res2){
+    debug("server interacts with API", "DELETE API_URI/clacks");
+    if(err) throw err;
+    debug("API responds to the server", res2);;
+    res.redirect('/clacks');
+  });
+});
+
 /**
  * GET clacks create.
  *
  * Renders the form page.
  */
 router.get('/create', function(req, res, next) {
+  debug("server receives a request", "GET /clacks/create");
   // render form
   res.render( 'create-clack', { } );
 });
@@ -76,13 +94,18 @@ router.get('/create', function(req, res, next) {
  * need comments
  */
 router.post('/', function(req, res, next) {
+  debug("server receives a request", "POST /clacks");
   body = Object();
   if(Array.isArray(req.body.keys)){
     for (var i = 0; i < req.body.keys.length; i++) {
-      body[req.body.keys[i]] = req.body.values[i];
+      if(req.body.keys[i] && req.body.keys[i] !== ''){
+        body[req.body.keys[i]] = req.body.values[i];
+      }
     }
   } else {
-    body[req.body.keys] = req.body.values;
+    if(req.body.keys && req.body.keys !== ''){
+      body[req.body.keys] = req.body.values;
+    }
   }
   body = JSON.parse(JSON.stringify(body));
   request({
@@ -90,19 +113,23 @@ router.post('/', function(req, res, next) {
     method: "POST",
     json: body
   }, function(err, req2, res2) {
+    debug("server interacts with API", "POST API_URI/clacks with body " + body);
     if(err) throw err;
-    res.redirect('/clacks');
+    debug("API responds to the server", res2);;
+    res.render( 'clack-creation-confirmed', { "clack": res2 } );
   });
 });
 
 /* DELETE Clack */
 router.get('/:id/delete_confirm', function(req, res, next) {
+  debug("server receives a request", "GET /clacks/" + req.params.id + "/delete_confirm");
   request({
     url: API_URI + "/clacks/" + req.params.id,
     method: "GET"
   }, function(err, req2, res2){
+    debug("server interacts with API", "GET API_URI/clacks/" + req.params.id);
     if(err) throw err;
-    console.log(res2);
+    debug("API responds to the server", res2);;
     res.render('delete-clack', { "clack": JSON.parse(res2) });
   });
 });
@@ -113,26 +140,32 @@ router.get('/:id/delete', function(req, res, next) {
   request({
     url: API_URI + "/clacks/" + req.params.id,
     method: "DELETE"
-  }, function(err){
+  }, function(err, req2, res2){
+    debug("server interacts with API", "DELETE API_URI/clacks/" + req.params.id);
     if(err) throw err;
+    debug("API responds to the server", res2);;
     res.redirect('/clacks');
   });
 });
 
 /* Update Clack print form */
 router.get('/:id/update', function(req, res, next) {
+  debug("server receives a request", "GET /clacks/" + req.params.id + "/update");
   request({
     url: API_URI + "/clacks/" + req.params.id,
     method: "GET"
   }, function(err, req2, res2){
+    debug("server interacts with API", "GET API_URI/clacks/" + req.params.id);
     if(err) throw err;
-    console.log(res2);
+    debug("API responds to the server", res2);;
     res.render('update-clack', { "clack": JSON.parse(res2) });
   });
 });
 
 /* Update Clack make request */
 router.post('/:id', function(req, res, next) {
+  debug("server receives a request", "POST /clacks/" + req.params.id);
+  debug("server manipulates data", ": form params => Object => JSON String !");
   body = Object();
   if(Array.isArray(req.body.keys)){
     for (var i = 0; i < req.body.keys.length; i++) {
@@ -142,12 +175,15 @@ router.post('/:id', function(req, res, next) {
     body[req.body.keys] = req.body.values;
   }
   body = JSON.parse(JSON.stringify(body));
+  debug("server manipulates data", body);
   request({
     url: API_URI + '/clacks/' + req.params.id,
     method: "PUT",
     json: body
   }, function(err, req2, res2) {
+    debug("server interacts with API", "PUT API_URI/clacks/" + req.params.id + " with body: " + body);
     if(err) throw err;
+    debug("API responds to the server", res2);;
     res.redirect('/clacks');
   });
 });
@@ -170,13 +206,14 @@ router.get('/:id/details', function(req, res, next) {
         res.render( 'clack-details', { "clack": JSON.parse(response.body) } );
       } else {
         // render error page
-        res.render('error', {
+        res.render('clack-details', {
+          "clack": null,
           "error": {
             "stack": process.env.DEV || process.env.REC ?
             error : "error stack is hidden",
             "status": "API Call Failed"
           },
-          "message": "Unable to find clacks"
+          "message": "Unable to find clack with id" + req.params.id
         })
       }
   });

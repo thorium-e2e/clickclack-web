@@ -86,6 +86,11 @@ input{
   color: black;
 }
 
+.button-details{
+  background-color: blue;
+  color: white;
+}
+
 /*
 * === IDs ===
 */

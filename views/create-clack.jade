@@ -18,11 +18,11 @@ html
         p#clack-fields-pair.input.input-free-form
           label key :
           =" "
-          input(type='text', name="keys", id="keys")
+          input(type='text', name="keys", id="keys", value=none)
           =" "
           label value :
           =" "
-          input(type='text', name="values", id="values")
+          input(type='text', name="values", id="values", value=none)
       p
         button.button.button-reset(type='reset')#btn-reset-form Reset
         button.button.button-create(type='button', onClick="addKeyValueFields()")#btn-add-fields Add

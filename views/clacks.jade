@@ -16,12 +16,23 @@ html
           button#btn-to-create-clack.button.button-create create
     main
       h2 List
+      if enableClearAll
+        p
+          a(href="/clacks/delete_all_confirm")
+            button#btn-to-delete-clack.button.button-delete /!\_CLEAR
+      div#list-view-conf
+        span *configure list view #{" "}
+        button ol
+        button ul
+        button small
+        button columns
       ol#clacks-list.content-list
         for clack in clacks
           li#clack.content-item.clack
-            a(href="/clacks/#{clack._id}/details")#lnk-to-clack-details
-              p #{JSON.stringify(clack, null, '\t')}
+            p #{JSON.stringify(clack, null, '\t')}
             p
+              a(href="/clacks/#{clack._id}/details")#lnk-to-clack-details
+                button#btn-to-details-clack.button.button-details details
               a(href="/clacks/#{clack._id}/update")
                 button#btn-to-update-clack.button.button-update update
               a(href="/clacks/#{clack._id}/delete_confirm")

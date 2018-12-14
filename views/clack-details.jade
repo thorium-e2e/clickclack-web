@@ -1,17 +1,26 @@
 html
   head
-    title Clack #{clack._id}
+    if clack
+      title Clack #{clack._id}
+    else
+      title Clack Not Found
     link(rel='stylesheet', href='/stylesheets/default.css')
     link(rel='stylesheet', href='/stylesheets/details.css')
     link(rel='stylesheet', href='/stylesheets/clacks.css')
     script(src='/javascripts/update-clacks.js')
   body
-    a(href="/clacks")
-      button#btn-to-clacks-list.button.button-link back
-    h1 Clack details
-    p #{JSON.stringify(clack)}
     p
+      a(href="/clacks")
+        button#btn-to-clacks-list.button.button-link back
+    if clack
+      h1 Clack details
+      p #{JSON.stringify(clack)}
+      p
         a(href="/clacks/#{clack._id}/update")
-            button#btn-to-update-clack.button.button-create update
-    p.text.text-info
-      i Clacks are free form data
+          button#btn-to-update-clack.button.button-update update
+        a(href="/clacks/#{clack._id}/delete_confirm")
+          button#btn-to-delete-clack.button.button-delete delete
+      p.text.text-info
+        i Clacks are free form data
+    else
+      p.error.error#err-no-clack sorry, no element to display!
