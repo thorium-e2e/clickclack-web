@@ -1,0 +1,44 @@
+<!-- //- FILE
+//- .views/error.html
+//- -------------------------------------------
+//- DESCRIPTION
+//- view for error
+//- -------------------------------------------
+//- INSTRUCTIONS
+//- use classes for CSS
+//- use ids for automation
+//- use '_' instead of '-'
+//- be simple ! (avoid big files and complex names + comment the code)
+//- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" charset="utf-8">
+    <title>Error</title>
+  </head>
+  <body>
+    <ul class="nav">
+      <li><a href="/" id="lnk_home">[ <-- ]</a></li>
+    </ul>
+    <hr />
+
+    <div class="main">
+      <% if (error) { %>
+        <p><%= JSON.stringify(error) %></p>
+      <% } else { %>
+        <p id="err_no_content">Sorry, no Error was given by the server ...</p>
+      <% } %>
+      <% if (message) { %>
+        <p><%= JSON.stringify(message) %></p>
+      <% } else { %>
+        <p id="err_no_content">Sorry, no Message was given by the server ...</p>
+      <% } %>
+    </div>
+    <hr />
+
+    <div class="footer">
+      <a href="https://github.com/thorium-e2e/clickclack-web">View Source</a>
+    </div>
+  </body>
+</html>

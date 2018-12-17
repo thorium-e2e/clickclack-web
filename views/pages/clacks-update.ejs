@@ -1,0 +1,67 @@
+<!-- //- FILE
+//- .views/clacks-update.html
+//- -------------------------------------------
+//- DESCRIPTION
+//- update form for clacks
+//- -------------------------------------------
+//- INSTRUCTIONS
+//- use classes for CSS
+//- use ids for automation
+//- use '_' instead of '-'
+//- be simple ! (avoid big files and complex names + comment the code)
+//- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" charset="utf-8">
+    <% if (clack) { %>
+      <title>Update Clack <%= clack._id %></title>
+    <% } else { %>
+      <title>Clack Not Found</title>
+    <% } %>
+  </head>
+  <body>
+    <ul class="nav">
+      <li><a href="/clacks" id="lnk_clacks">[ <-- ]</a></li>
+    </ul>
+    <div class="main">
+      <% if (clack) { %>
+        <h3>Update Clack Form</h3>
+        <form action="/clacks/<%= clack._id %>" method="post">
+          <ul>
+            <% for (var key in clack) { %>
+              <% if( clack.hasOwnProperty(key) && key !== "_id" ) { %>
+                <li id="clacks_fields_pair">
+                  <p>
+                    <label for="keys">Key : </label>
+                    <input type="text" name="keys" id="keys" value="<%= key %>" placeholder="key">
+                  </p>
+                  <p>
+                    <label for="values">Value : </label>
+                    <input type="text" name="values" id="values" value="<%= clack[key] %>" placeholder="value">
+                  </p>
+                </li>
+              <% } %>
+            <% } %>
+
+          </ul>
+          <ul id="form_actions">
+            <li><button type="reset" id="button_reset">[ <-- ]</button></li>
+            <li><button type="button" id="btn_add_fields" onclick="addKeyValueFields()">[  +  ]</button></li>
+            <li><button type="submit" id="btn_submit">[ --> ]</button></li>
+          </ul>
+        </form>
+      </div>
+      <% } else { %>
+        <p>Sorry, Clack with ID <%= req.params %> does not exist ...</p>
+      <% } %>
+
+    <hr />
+
+    <div class="footer">
+      <a href="https://github.com/thorium-e2e/clickclack-web">View Source</a>
+    </div>
+    <script src="js/clacks-update.js" charset="utf-8"></script>
+  </body>
+</html>

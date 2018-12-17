@@ -1,0 +1,39 @@
+<!-- //- FILE
+//- .views/clacks-dete-all.html
+//- -------------------------------------------
+//- DESCRIPTION
+//- confirmation page to clear all clacks
+//- -------------------------------------------
+//- INSTRUCTIONS
+//- use classes for CSS
+//- use ids for automation
+//- use '_' instead of '-'
+//- be simple ! (avoid big files and complex names + comment the code)
+//- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" charset="utf-8">
+    <title>Delete Clack</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--1-col"><!-- Colored icon button -->
+        <button id="btn_clacks" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+          <a href="/clacks" id="lnk_clacks"><i class="material-icons">arrow_back</i></a>
+        </button>
+        <div class="mdl-tooltip" data-mdl-for="btn_clacks">back to clacks list</div>
+      </div>
+    </div>
+    <div class="main">
+      <h3>Delete /!\_ALL_Clacks_/!\</h3>
+      <p>Are you sure ?</p>
+      <a href="/clacks" id="lnk_clacks"><button type="button" id="not_sure">[ <-- ]</button></a>
+      <a href="/clacks/delete/confirm" id="lnk_delete_confirm"><button type="button" id="sure">[ &#10004; ]</button></a>
+    </div>
+  </body>
+</html>

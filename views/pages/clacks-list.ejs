@@ -1,0 +1,51 @@
+<!-- //- FILE
+//- .views/clacks-list.html
+//- -------------------------------------------
+//- DESCRIPTION
+//- list all clacks
+//- -------------------------------------------
+//- INSTRUCTIONS
+//- use classes for CSS
+//- use ids for automation
+//- use '_' instead of '-'
+//- be simple ! (avoid big files and complex names + comment the code)
+//- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" charset="utf-8">
+    <title>Clacks</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+    <ul class="nav">
+      <li><a href="/" id="lnk_home">[ <-- ]</a></li>
+      <li><a href="/clacks/create" id="lnk_clacks_create">[  +  ]</a></li>
+      <li><a href="/clacks/delete" id="lnk_clacks_delete">[  X  ]</a></li>
+    </ul>
+    <div class="main">
+      <% if (clacks.length > 0) { %>
+        <ul id="clacks">
+          <% for (var i = 0; i < clacks.length; i++) { %>
+            <li id="clack">
+              <p><%= JSON.stringify(clacks[i], null, '\t') %></p>
+              <ul id="clack_actions">
+                <li><a href="/clacks/<%= clacks[i]._id %>/details" id="lnk_clack_details">[  i  ]</a></li>
+                <li><a href="/clacks/<%= clacks[i]._id %>/update" id="lnk_clack_update">[  ~  ]</a></li>
+                <li><a href="/clacks/<%= clacks[i]._id %>/delete" id="lnk_clack_delete">[  X  ]</a></li>
+              </ul>
+            </li>
+          <% } %>
+        </ul>
+      <% } else { %>
+        <p id="err_no_content">Sorry, no Clack can be found yet, please create one or more ...</p>
+      <% } %>
+    </div>
+    <div class="footer">
+      <a href="https://github.com/thorium-e2e/clickclack-web" id="lnk_source">View Source</a>
+    </div>
+  </body>
+</html>
