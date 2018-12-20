@@ -1,8 +1,8 @@
 <!-- //- FILE
-//- .views/error.html
+//- .views/clacks-create-confirm.html
 //- -------------------------------------------
 //- DESCRIPTION
-//- view for error
+//- page that appears once a clack is created
 //- -------------------------------------------
 //- INSTRUCTIONS
 //- use classes for CSS
@@ -15,33 +15,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width" initial-scale="1.0" charset="utf-8">
-    <title>Error</title>
+    <title>Updated Clack</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-indigo.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
   <body class="mdl-grid">
     <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-      <div class="mdl-cell mdl-cell--1-col"><!-- Colored icon button -->
-        <button id="btn_home" class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
-          <a href="/clacks" id="lnk_home"><i class="material-icons">home</i></a>
+      <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"><!-- Colored icon button -->
+        <button id="btn_clacks" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+          <a href="/clacks" id="lnk_clacks"><i class="material-icons">list</i></a>
         </button>
-        <div class="mdl-tooltip" data-mdl-for="btn_home">back to clacks list</div>
+        <div class="mdl-tooltip" data-mdl-for="btn_clacks">back to clacks list</div>
+      </div>
+      <div class="mdl-cell mdl-cell--1-col"><!-- Colored icon button -->
+        <button id="btn_clack_details" class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
+          <a href="/clacks/<%= id %>/details" id="lnk_clack_details"><i class="material-icons">info</i></a>
+        </button>
+        <div class="mdl-tooltip" data-mdl-for="btn_clacks">clack details</div>
       </div>
     </div>
     <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-      <% if (error) { %>
-        <p><%= JSON.stringify(error) %></p>
-      <% } else { %>
-        <p id="err_error">Sorry, no Error was given by the server ...</p>
-      <% } %>
-    </div>
-    <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-      <% if (message) { %>
-        <p><%= JSON.stringify(message) %></p>
-      <% } else { %>
-        <p id="err_message">Sorry, no Message was given by the server ...</p>
-      <% } %>
+      <span class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-chip">
+        <span class="text_success mdl-chip__text" id="text_created">You have just updated this clack !</span>
+      </span>
     </div>
   </body>
 </html>

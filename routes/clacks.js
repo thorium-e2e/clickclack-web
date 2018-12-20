@@ -108,6 +108,8 @@ router.post('/', function(req, res, next) {
     }
   }
   body = JSON.parse(JSON.stringify(body));
+  debug("Received form data");
+  debug(body);
   request({
     url: API_URI + '/clacks',
     method: "POST",
@@ -169,12 +171,18 @@ router.post('/:id', function(req, res, next) {
   body = Object();
   if(Array.isArray(req.body.keys)){
     for (var i = 0; i < req.body.keys.length; i++) {
-      body[req.body.keys[i]] = req.body.values[i];
+      if(req.body.keys[i] && req.body.keys[i] !== ''){
+        body[req.body.keys[i]] = req.body.values[i];
+      }
     }
   } else {
-    body[req.body.keys] = req.body.values;
+    if(req.body.keys && req.body.keys !== ''){
+      body[req.body.keys] = req.body.values;
+    }
   }
   body = JSON.parse(JSON.stringify(body));
+  debug("Received form data");
+  debug(body);
   debug("server manipulates data", body);
   request({
     url: API_URI + '/clacks/' + req.params.id,
@@ -184,7 +192,7 @@ router.post('/:id', function(req, res, next) {
     debug("server interacts with API", "PUT API_URI/clacks/" + req.params.id + " with body: " + body);
     if(err) throw err;
     debug("API responds to the server", res2);;
-    res.redirect('/clacks');
+    res.render( 'pages/clacks-update-confirm', { "id": req.params.id } );
   });
 });
 

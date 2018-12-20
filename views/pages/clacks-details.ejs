@@ -21,28 +21,43 @@
       <title>Clack Not Found</title>
     <% } %>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-indigo.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
-  <body>
-    <ul class="nav">
-      <li><a href="/clacks" id="lnk_clacks">[ <-- ]</a></li>
-    </ul>
-    <div class="main">
-      <% if (clack) { %>
+  <body class="mdl-grid">
+    <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-cell mdl-cell--1-col"><!-- Colored icon button -->
+        <button id="btn_clacks" class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
+          <a href="/clacks" id="lnk_clacks"><i class="material-icons">list</i></a>
+        </button>
+        <div class="mdl-tooltip" data-mdl-for="btn_clacks">back to clacks list</div>
+      </div>
+    </div>
+    <% if (clack) { %>
+      <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
         <h3>Clack Details</h3>
+      </div>
+      <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
         <p><%= JSON.stringify(clack, null, '\t') %></p>
-        <ul id="clack_actions">
-          <li><a href="/clacks/<%= clack._id %>/details" id="lnk_clack_details">[  i  ]</a></li>
-          <li><a href="/clacks/<%= clack._id %>/update" id="lnk_clack_update">[  ~  ]</a></li>
-          <li><a href="/clacks/<%= clack._id %>/delete" id="lnk_clack_delete">[  X  ]</a></li>
-        </ul>
-      <% } else { %>
+      </div>
+      <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" id="clack_actions">
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--2-col-phone">
+          <button id="btn_clack_update" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+            <a href="/clacks/<%= clack._id %>/update" id="lnk_clack_update"><i class="material-icons">update</i></a>
+          </button>
+          <div class="mdl-tooltip" data-mdl-for="btn_clack_update">update</div>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--2-col-phone">
+          <button id="btn_clack_delete" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+            <a href="/clacks/<%= clack._id %>/delete" id="lnk_clack_delete"><i class="material-icons">delete</i></a>
+          </button>
+          <div class="mdl-tooltip" data-mdl-for="btn_clack_delete">delete</div>
+        </div>
+      </div>
+    <% } else { %>
+      <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
         <p id="error_not_found">Sorry, Clack with ID <%= req.params %> does not exist ...</p>
-      <% } %>
-    </div>
-    <div class="footer">
-      <a href="https://github.com/thorium-e2e/clickclack-web" id="lnk_source">View Source</a>
-    </div>
+      </div>
+    <% } %>
   </body>
 </html>
